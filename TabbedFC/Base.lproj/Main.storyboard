@@ -131,7 +131,7 @@
                             <constraint firstItem="Eic-V2-hGz" firstAttribute="top" secondItem="pD5-si-ap4" secondAttribute="bottom" constant="50" id="eXc-ko-PTz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="Eek-V2-g5A"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="Eek-V2-g5A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUU-j7-ZtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +162,7 @@
                             <constraint firstItem="tdX-5a-1td" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="50" id="kcF-PM-9BD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="History" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="History" image="History" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,7 +238,7 @@
         <scene sceneID="HwQ-dz-EIK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="by0-qK-NeI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g96-A8-OMZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -255,7 +255,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="History" width="32" height="32"/>
+        <image name="Home" width="32" height="32"/>
+        <image name="Profile" width="32" height="32"/>
     </resources>
 </document>
