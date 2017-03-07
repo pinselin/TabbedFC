@@ -8,11 +8,31 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, GetProfileDeligate {
+    var profile = Profile.sharedProfile
+    
+    @IBOutlet weak var userName: UILabel!
+    
+    var myName: String = ""
+    
+    @IBAction func unwindToTop(segue: UIStoryboardSegue){
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+    }
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getProfile()
+        if myName != "" {
+            userName.text = myName
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +40,9 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func getProfile() {
+        myName = profile.name
+    }
+    
 }
 

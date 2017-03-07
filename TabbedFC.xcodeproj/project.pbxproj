@@ -13,6 +13,9 @@
 		DED0733C1E6C246D00092366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED0733A1E6C246D00092366 /* Main.storyboard */; };
 		DED0733E1E6C246D00092366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED0733D1E6C246D00092366 /* Assets.xcassets */; };
 		DED073411E6C246D00092366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED0733F1E6C246D00092366 /* LaunchScreen.storyboard */; };
+		ED3D20921E6E5B5200643353 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D20911E6E5B5200643353 /* ProfileViewController.swift */; };
+		ED3D20941E6E5F9700643353 /* GetProfileDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D20931E6E5F9700643353 /* GetProfileDeligate.swift */; };
+		ED3D20961E6E629100643353 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D20951E6E629100643353 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DED0733D1E6C246D00092366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED073401E6C246D00092366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED073421E6C246D00092366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3D20911E6E5B5200643353 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		ED3D20931E6E5F9700643353 /* GetProfileDeligate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProfileDeligate.swift; sourceTree = "<group>"; };
+		ED3D20951E6E629100643353 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				DED073341E6C246D00092366 /* AppDelegate.swift */,
 				DED073361E6C246D00092366 /* FirstViewController.swift */,
 				DED073381E6C246D00092366 /* SecondViewController.swift */,
+				ED3D20911E6E5B5200643353 /* ProfileViewController.swift */,
+				ED3D20931E6E5F9700643353 /* GetProfileDeligate.swift */,
 				DED0733A1E6C246D00092366 /* Main.storyboard */,
+				ED3D20951E6E629100643353 /* Profile.swift */,
 				DED0733D1E6C246D00092366 /* Assets.xcassets */,
 				DED0733F1E6C246D00092366 /* LaunchScreen.storyboard */,
 				DED073421E6C246D00092366 /* Info.plist */,
@@ -99,6 +108,7 @@
 				TargetAttributes = {
 					DED073301E6C246D00092366 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CG6F853P6N;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,7 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED073391E6C246D00092366 /* SecondViewController.swift in Sources */,
+				ED3D20961E6E629100643353 /* Profile.swift in Sources */,
 				DED073351E6C246D00092366 /* AppDelegate.swift in Sources */,
+				ED3D20941E6E5F9700643353 /* GetProfileDeligate.swift in Sources */,
+				ED3D20921E6E5B5200643353 /* ProfileViewController.swift in Sources */,
 				DED073371E6C246D00092366 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +277,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CG6F853P6N;
 				INFOPLIST_FILE = TabbedFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.feelingCouplePBL.TabbedFC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.feelingCouplePBL.TabbedFCfff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,9 +291,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CG6F853P6N;
 				INFOPLIST_FILE = TabbedFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.feelingCouplePBL.TabbedFC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.feelingCouplePBL.TabbedFCfff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -303,6 +320,7 @@
 				DED073471E6C246D00092366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
