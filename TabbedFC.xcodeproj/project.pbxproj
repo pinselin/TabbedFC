@@ -108,7 +108,9 @@
 				TargetAttributes = {
 					DED073301E6C246D00092366 = {
 						CreatedOnToolsVersion = 8.2.1;
+
 						DevelopmentTeam = CG6F853P6N;
+
 						ProvisioningStyle = Automatic;
 					};
 				};
